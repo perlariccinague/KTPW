@@ -1,0 +1,227 @@
+.mod_newsreader h1 {
+  padding-right:10px;
+  padding-left:10px;
+}
+
+#left .mod_newslist .layout_latest {
+  padding-bottom:10px;
+  border-top:1px solid rgba(0,0,0,.3);
+}
+
+#left .mod_newslist {
+  margin-top:50px;
+  p {
+    font:1em/1.4em 'Merriweather Sans',sans-serif;;
+    text-decoration:none;
+    color:#000;
+  }
+  h2 {
+    margin-top:4px;
+    margin-bottom:12px;
+    a {
+      font:.6em 'Merriweather Sans',sans-serif;;
+      font-style:italic;
+      text-decoration:none;
+      color:#000;
+      font-weight: 700;
+      transition: color 250ms;
+      &:hover {
+        color:#a85611;
+      }
+    }
+  }
+}
+
+#left .mod_newslist .teaser p {
+  margin-bottom:5px;
+}
+
+#left .mod_newslist p.more a {
+  font:.9em 'Merriweather Sans',sans-serif;;
+  font-style:italic;
+  text-decoration:none;
+  color:#000;
+  text-transform:uppercase;
+  font-weight: 400;
+  transition: color 250ms;
+  &:hover {
+    color:#a85611;
+  }
+  &:before {
+    margin-right:5px;
+    font:.8em 'icomoon';
+    font-weight:bold;
+    color:#a85611;
+   /* content: "\ea42";*/
+    /*content: "\64";*/
+    content: url("/files/layout/arrow-right-orange.svg");
+    width: 10px;
+    display: inline-block;
+  }
+}
+
+#left .mod_newslist .layout_latest.temp {
+  margin-top:-72px;
+  margin-bottom:50px;
+  padding:40px 20px 10px;
+  background-color:#aaa549;
+  border-top:0;
+  &:after {
+    content: url("/files/layout/temp_ecke.png");
+    right: -22px;
+    position: absolute;
+    top: -22px;
+  }
+}
+
+#left .mod_newslist .temp h2 a {
+  display:block;
+  padding-bottom:10px;
+  border-bottom:1px solid;
+  font:.6em 'Merriweather Sans',sans-serif;;
+  font-style:italic;
+  text-decoration:none;
+  color:#fff;
+  font-weight: 700;
+}
+
+#left .mod_newslist .temp p,
+#left .mod_newslist .temp p.more,
+#left .mod_newslist .temp p.more:before,
+#left .mod_newslist .temp p.more a {
+  color:#fff;
+}
+
+#left .mod_newslist .temp p.more a:hover {
+  color:#66632e;
+}
+
+.mod_newslist .layout_short {
+  border-bottom: 1px solid #aaa549;
+  padding-bottom: 10px;
+  h2 a {
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    span {
+      color: #a85611;
+    }
+  }
+}
+
+.layout_short .more a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 250ms;
+  &:after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: -7px;
+    width: 34px;
+    height: 31px;
+    background: url("/files/layout/arrow-right-circle.svg") no-repeat 0/cover;
+  }
+  &:hover {
+    color: #aaa549;
+  }
+}
+
+#main .layout_short .new {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+  .ce_text.block {
+    width: 70%;
+    padding-right: 0;
+    padding-left: 0;
+
+  }
+}
+
+ .layout_short .new .more:hover a:after{
+   filter: invert(70%) sepia(9%) saturate(9000%) hue-rotate(20deg) brightness(75%);
+    transition: 0.4s;
+}
+
+ #main .mod_newsarchive .layout_latest {
+   border-bottom: 1px solid #a85611;
+   padding-bottom: 10px;
+   h2 a {
+     font-weight: 600;
+     font-style: italic;
+     text-decoration: none;
+     span {
+       color: #aaa549;
+     }
+   }
+   .ce_text {
+     padding-right: 0;
+     padding-left: 0;
+   }
+ }
+
+
+.mod_newsarchive .layout_latest .more a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 250ms;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    background: url("/files/layout/arrow-right-orange.svg") no-repeat 0/cover;
+  }
+  span {
+    font-weight: 500;
+    font-variant: all-petite-caps;
+    font-size: 18px;
+    margin-left: 23px;
+  }
+  &:hover {
+    color: #a85611;
+  }
+}
+
+#main .layout_latest .info {
+  font-variant: all-petite-caps;
+  color: gray;
+}
+
+@media screen and (max-width: 650px) {
+  #left .mod_newslist {
+    padding-left:10px;
+  }
+  #main .layout_short .new {
+    .ce_text.block {
+      width: 100%;
+    }
+    .more {
+      width: 100%;
+      a {
+        font-size: 13px;
+        font-weight: 600;
+        &:after {
+          top: -4px;
+          width: 23px;
+          height: 21px;
+          right: -27px;
+        }
+        span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

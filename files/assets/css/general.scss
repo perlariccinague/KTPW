@@ -1,0 +1,110 @@
+@import "header";
+@import "form";
+@import "main";
+@import "accordion";
+@import "actuelle";
+@import "font";
+@import "footer";
+@import "menu";
+
+body {
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+.cookiebar {
+  background-color:#472802;
+  a {
+    text-decoration: none !important;
+    &:hover {
+      color:rgba(255,255,255,.8);
+      text-decoration: none !important;
+    }
+  }
+}
+
+.cookiebar__button {
+  background-color:#aaa549;
+  &:hover {
+    background-color:rgba(170,165,73,.8);
+  }
+}
+
+.mapoverlay {
+  background:transparent;
+  position:relative;
+  width:100%;  /* iframe Breite*/
+  height:450px; /* iframe Höhe */
+  top:450px;  /* iframe Höhe*/
+  margin-top:-450px;  /* iframe Höhe*/
+}
+
+.invisible {
+  /*display:none;*/
+  display: none !important;
+  &:focus {
+    outline: 0;
+  }
+}
+
+a,
+body,
+div,
+em,
+input,
+label,
+li,
+ol,
+p,
+select,
+span,
+strong,
+td,
+th,
+textarea,
+u,
+ul {
+  font-family:'Merriweather Sans',sans-serif;
+}
+
+.ce_downloads a,
+.ce_download a {
+  font-size:1.15em;
+  text-transform:uppercase;
+}
+
+.ce_text a,
+p.back a,
+.ce_download a,
+.ce_downloads a {
+  text-decoration:none;
+  color:#aaa549;
+  &:hover {
+    text-decoration:none;
+    color:#a85611;
+  }
+}
+
+p.back {
+  padding-left:10px;
+}
+
+iframe {
+  width:100%;
+  margin-bottom:50px;
+}
+
+@media screen and (max-width: 900px) {
+  .button__icon {
+    font-size: 100px !important;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .button__icon {
+    font-size: 50px !important;
+    width: 50px !important;
+  }
+}

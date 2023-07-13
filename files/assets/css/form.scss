@@ -1,0 +1,68 @@
+.ce_form label {
+  display:block;
+  margin-bottom:5px;
+  color:#4c4c4c;
+  text-align:left;
+}
+
+.ce_form span.mandatory {
+  color:#aaa549;
+}
+
+.ce_form span.captcha_text {
+  color:#4c4c4c;
+  text-align:left;
+  /*vertical-align: -webkit-baseline-middle;*/
+  vertical-align: middle;
+}
+
+.ce_form .widget {
+  margin-top:10px;
+}
+
+.ce_form .formbody {
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+.ce_form .formbody input.text,
+.formbody input.captcha.mandatory,
+.ce_form .formbody .textarea {
+  border-top:0 solid #aaa549;
+  border-right:0 solid #aaa549;
+  border-bottom:1px solid #aaa549;
+  border-left:0 solid #aaa549;
+  width:96%;
+  height:25px;
+  display:inline-block;
+  padding-right:2%;
+  padding-left:2%;
+  vertical-align:top;
+  background-color:#fff;
+}
+
+.formbody input.captcha.mandatory {
+  width:50px;
+  margin-right:10px;
+  padding-right:5px;
+  padding-left:5px;
+}
+
+.ce_form .formbody .textarea {
+  height:65px;
+  padding: 5px 2%;
+}
+
+.ce_form .submit {
+  background-color:#aaa549;
+  border:0 solid;
+  font-weight:bold;
+ /* font-weight:normal;*/
+  margin-top:20px;
+  padding:5px;
+  color:#fff;
+  cursor: pointer;
+  &:hover {
+    background-color:#a85611;
+  }
+}

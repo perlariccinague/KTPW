@@ -1,0 +1,239 @@
+#main p {
+  font:1.2em/1.6em 'Merriweather Sans',sans-serif;;
+  color:#4c4c4c;
+  font-weight: 300;
+}
+
+#main li {
+  padding-left:20px;
+  background-image:url("/files/layout/li.png");
+  background-position:left top;
+  background-repeat:no-repeat;
+  font:1.2em/1.6em 'Merriweather Sans',sans-serif;;
+  color:#4c4c4c;
+  font-weight: 300;
+  background-position-y: 6px;
+}
+
+#main h1 {
+  font:1.7em/1.6em 'Merriweather Sans',sans-serif;;
+  font-style:italic;
+  color:#a85611;
+  font-weight: 300;
+}
+
+#main .point:before {
+  margin-right:5px;
+  vertical-align:middle;
+  font:3.5em/0em Arial,sans-serif;
+  color:#a85611;
+  content: "•";
+}
+
+#toplink hr {
+  margin-top:-35px;
+  margin-bottom:80px;
+  border-top:0 solid rgba(0,0,0,.3);
+  border-right:0 solid rgba(0,0,0,.3);
+  border-bottom:1px solid rgba(0,0,0,.3);
+  border-left:0 solid rgba(0,0,0,.3);
+}
+
+#toplink .top_link {
+  margin-right:auto;
+  margin-left:auto;
+  text-align:center;
+}
+
+#main .accordion {
+  background-color:#fff;
+}
+
+#main .ce_text,
+#main .toggler,
+#main .ce_download,
+#main .ce_downloads {
+  padding-right:10px;
+  padding-left:10px;
+}
+
+.ce_download,
+.ce_downloads {
+  width:100%;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  background-color:rgba(255,255,255,.7);
+}
+
+#main .ce_text .image_container img {
+  width:100%;
+  height:auto;
+}
+
+.galleria-info {
+  display: none;
+}
+
+.galleria-theme-classic {
+  background: transparent;
+}
+
+.miel {
+  opacity: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  z-index: -1 !important;
+}
+
+#container {
+  width:100%;
+  display:inline-block;
+  padding-right:10px;
+  padding-left:10px;
+  background-color:#f6f6f6;
+  margin: 20px auto 100px;
+  .inside {
+    width:100%;
+    max-width:1040px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+}
+
+#left {
+  width:32%;
+  max-width:320px;
+  position:relative;
+  float:left;
+  margin-right:3%;
+}
+
+#main {
+  width:64%;
+  max-width:660px;
+  position:relative;
+  float:left;
+  display:block;
+  .inside {
+    max-width:660px;
+    display:block;
+  }
+}
+
+#main .ce_galerie {
+  margin-top:20px;
+}
+
+#main .image_container {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#main .ce_image img {
+  width:100%;
+  height:auto;
+}
+
+.notfall {
+  margin-top: 20px;
+}
+
+#left .notfall .temp {
+    margin-bottom: 2px;
+    padding: 10px 20px;
+    background-color: #aaa549;
+    border-top: 0;
+    padding-left: 80px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 250ms;
+      &:hover {
+        color: #a85611;
+      }
+    }
+  }
+
+.notfall .temp {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 21px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  h4 {
+    line-height: 0.5em;
+  }
+}
+
+/*.notfall #info.temp::after {
+  content: url("/files/layout/temp_ecke.png");
+  right: -22px;
+  position: absolute;
+  top: 0;
+}*/
+
+.notfall #info.temp:before {
+  background-image: url("/files/layout/Notfall.svg")
+}
+
+.notfall #actuelles.temp:before {
+  background-image: url("/files/layout/Actuelles.svg")
+}
+
+.notfall #blood_donation.temp:before {
+  background-image: url("/files/layout/Blutspende.svg")
+}
+
+.notfall #corona.temp:before {
+  background-image: url("/files/layout/Corona.svg")
+}
+
+.mod_mobile_menu {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .notfall .temp h4 {
+    line-height: 1.1em;
+  }
+  .mod_mobile_menu {
+    display: block;
+    #mobile-menu-34-trigger {
+      position: absolute;
+      right: 14px;
+      top: 50px;
+      z-index: 4;
+      cursor: pointer;
+      img {
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #left, #main {
+    width:100%;
+  }
+  #left {
+    max-width:95%;
+  }
+  .notfall .temp h4 {
+    line-height: 0.5em;
+  }
+  .mod_mobile_menu {
+    display: block;
+  }
+}
