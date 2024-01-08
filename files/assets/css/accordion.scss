@@ -35,3 +35,10 @@
   content: "\66";
 }
 
+.accordion .ce_text p {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+}
